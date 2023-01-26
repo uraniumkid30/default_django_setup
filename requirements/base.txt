@@ -1,0 +1,15 @@
+asgiref
+black
+click
+Django
+djangorestframework
+mypy-extensions
+pathspec
+pip
+platformdirs
+pytz
+setuptools
+sqlparse
+tomli
+typing-extensions
+whitenoise
