@@ -76,11 +76,10 @@ AUTH_PASSWORD_VALIDATORS = [
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = "static/"
-# STATIC_ROOT = "/var/www/static" # is the folder location of static files when collectstatic is run
-
-MEDIA_URL = "media/"
-# MEDIA_ROOT = "/var/www/media"
+STATIC_URL = "/static/"
+STATIC_ROOT = STATIC_COLLECTION_DIR  # is the folder location of static files when collectstatic is run
+MEDIA_URL = "/media/"
+MEDIA_ROOT = MEDIA_DIR
 
 # STATICFILES_DIRS = [
 #     os.path.join(THEME_DIR, "static"),
