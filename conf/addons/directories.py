@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 
-from ..env import env
+from conf.env_manager import env
 from file_manager.utils import FileProcessingTool
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
