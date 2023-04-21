@@ -1,7 +1,7 @@
 import os
 from conf.addons.constants import *
 from conf.addons.directories import *
-from conf.addons.apps import INSTALLED_APPS
+from conf.addons.apps import INSTALLED_APPS, LOCAL_APPS
 from conf.addons.logs import get_logs_settings
 
 INTERNAL_IPS = ("127.0.0.1",)
@@ -88,4 +88,4 @@ MEDIA_ROOT = MEDIA_DIR
 # DJANGO_STATICFILES_STORAGE = "django.contrib.staticfiles.storage.StaticFilesStorage"
 # WHITENOISE_STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-LOGGING = get_logs_settings(LOGS_DIR, INSTALLED_APPS)
+LOGGING = get_logs_settings(LOGS_DIR, LOCAL_APPS)

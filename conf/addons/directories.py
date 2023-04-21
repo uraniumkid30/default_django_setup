@@ -62,7 +62,7 @@ def create_neccessary_directories():
         FileProcessingTool.check_and_create_dir(_dir)
 
 
-if env.bool("CREATE_DEFAULT_DIRECTORIES", False):
+if env.bool("CREATE_DEFAULT_DIRECTORIES", True):
     create_neccessary_directories()
 else:
     LOGS_DIR = ""

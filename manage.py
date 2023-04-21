@@ -6,7 +6,7 @@ from services.library_manager import update_requirements
 
 def main():
     """Run administrative tasks."""
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "conf.settings.productioin")
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "conf.settings.production")
     try:
         from django.core.management import execute_from_command_line
         update_requirements()

@@ -3,7 +3,7 @@ from conf.env_manager import env
 
 
 def get_logs_settings(logs_dir: str = "", installed_apps: list = []):
-    if env.bool("USE_LOGGERS", False):
+    if not env.bool("USE_LOGGERS", True):
         return {}
 
     LOGGING = {

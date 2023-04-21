@@ -12,7 +12,7 @@ DEFAULT_APPS = [
 LOCAL_APPS = []
 
 THIRD_PARTY_APPS = [
-    "rest_framework",
+    # "rest_framework",
     # "whitenoise.runserver_nostatic",
 ]
 
