@@ -3,7 +3,7 @@ import secrets
 import subprocess
 
 db_name = "production_database.sqlite3"
-db_path = DATABASE_DIR / db_name
+db_path = os.path.join(DATABASE_DIR, db_name)
 FileProcessingTool.check_and_create_file(db_path)
 DATABASES = {
     "default": {

@@ -2,11 +2,11 @@ asgiref
 black
 click
 Django
-djangorestframework
 mypy-extensions
 pathspec
 pip
 platformdirs
+python-environ
 pytz
 setuptools
 sqlparse
