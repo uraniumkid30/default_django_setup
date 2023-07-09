@@ -1,6 +1,17 @@
 asgiref
+black
+click
 django
+exceptiongroup
+iniconfig
+mypy-extensions
+packaging
+pathspec
+platformdirs
+pluggy
+pytest
 python-environ
 sqlparse
+tomli
 typing-extensions
 whitenoise

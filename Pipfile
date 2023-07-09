@@ -8,6 +8,8 @@ django = "*"
 python-environ = "*"
 whitenoise = "==6.0.0"
 typing-extensions = "*"
+pytest = "*"
+black = "*"
 
 [dev-packages]
 
