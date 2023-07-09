@@ -3,11 +3,11 @@ import csv
 import sys
 import logging
 import traceback
-from typing import Optional, List, NoReturn
-
 from os import listdir
 from pathlib import Path
 from os.path import isfile, join
+from typing import Optional, NoReturn
+
 from django.conf import settings
 
 logger = logging.getLogger("file_processor")
@@ -26,6 +26,7 @@ class FileProcessingTool:
             os.rename(complete_file_path, destination_dir)
         except Exception as err:
             traceback_str: str = traceback.format_exc()
+            print(err)
             print(traceback_str)
             return False
         else:
@@ -33,7 +34,7 @@ class FileProcessingTool:
 
     @staticmethod
     def get_unprocessed_files(new_files: list) -> list:
-        fn_name = sys._getframe(0).f_code.co_name
+        # fn_name = sys._getframe(0).f_code.co_name
 
         # Fetch files from archive folder
         logger.info("Trying to make a list of archived files.")
@@ -64,6 +65,7 @@ class FileProcessingTool:
 
     @staticmethod
     def is_file_exists(_path: str) -> bool:
+        """Checks if a file exists"""
         _file = Path(_path)
         if not _file.is_file():
             return False
@@ -71,16 +73,17 @@ class FileProcessingTool:
 
     @staticmethod
     def remove_file(_path: str) -> NoReturn:
+        """Removes a file if it exists"""
         try:
             if FileProcessingTool.is_file_exists(_path):
                 os.remove(_path)
-        except:
-            pass
-        else:
-            print(f"{_path} removed")
+                print(f"{_path} removed")
+        except Exception as err:
+            print(f"error {err}")
 
     @staticmethod
     def is_folder_exists(_dir: str) -> bool:
+        """Checks If a folder exists"""
         if os.path.exists(_dir) and os.path.isdir(_dir):
             return True
         return False
