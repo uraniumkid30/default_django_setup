@@ -18,7 +18,7 @@ ANONYMOUS_URLS = [
 
 # Application definition
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 MIDDLEWARE = [

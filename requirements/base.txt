@@ -1,15 +1,6 @@
 asgiref
-black
-click
-Django
-mypy-extensions
-pathspec
-pip
-platformdirs
+django
 python-environ
-pytz
-setuptools
 sqlparse
-tomli
 typing-extensions
 whitenoise
