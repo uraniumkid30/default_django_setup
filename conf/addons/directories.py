@@ -12,7 +12,7 @@ BASE_DIR = ROOT_DIR
 
 DATABASE_DIR = os.path.join(PROJECT_DIR, "databases")
 REQUIREMENTS_DIR = os.path.join(ROOT_DIR, "requirements")
-MISCELLANEOUS_DIR = os.path.join(ROOT_DIR, "miscellaneous")
+MISCELLANEOUS_DIR = os.path.join(PROJECT_DIR, "miscellaneous")
 LOGS_DIR = os.path.join(MISCELLANEOUS_DIR, "LOGS")
 FILES_DIR = os.path.join(MISCELLANEOUS_DIR, "FILES")
 THEME_DIR = os.path.join(MISCELLANEOUS_DIR, "THEMES")

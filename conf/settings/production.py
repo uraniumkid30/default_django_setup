@@ -1,6 +1,13 @@
-from .base import *
+import os
 import secrets
 import subprocess
+
+from .base import *
+from conf.addons.directories import (
+    REQUIREMENTS_DIR,
+    DATABASE_DIR,
+    FileProcessingTool
+)
 
 db_name = "production_database.sqlite3"
 db_path = os.path.join(DATABASE_DIR, db_name)
@@ -26,4 +33,4 @@ if not FileProcessingTool.is_file_exists(prod_requirements):
         with open(prod_requirements, "w") as f:
             f.write("-r base.txt")
     except Exception as err:
-        print("Error: {err}")
+        print(f"Error: {err}")

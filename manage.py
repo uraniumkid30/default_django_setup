@@ -2,14 +2,16 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
-from services.library_manager import update_requirements
+from services.library_manager import lib_manager_factory
+
 
 def main():
     """Run administrative tasks."""
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "conf.settings.production")
     try:
         from django.core.management import execute_from_command_line
-        update_requirements()
+        lib_manager = lib_manager_factory()
+        lib_manager.update_requirements()
     except ImportError as exc:
         raise ImportError(
             "Couldn't import Django. Are you sure it's installed and "

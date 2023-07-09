@@ -23,4 +23,4 @@ ALL_APPS_CONTAINER = {
 }
 
 # Application definition
-INSTALLED_APPS = functools.reduce(lambda x, y: x + y, ALL_APPS_CONTAINER.values())
+INSTALLED_APPS: list = functools.reduce(lambda x, y: x + y, ALL_APPS_CONTAINER.values())

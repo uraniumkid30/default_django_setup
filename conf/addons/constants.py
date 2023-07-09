@@ -1,13 +1,13 @@
-WSGI_APPLICATION = "conf.wsgi.application"
+WSGI_APPLICATION: str = "conf.wsgi.application"
 
-LANGUAGE_CODE = "en-us"
+LANGUAGE_CODE: str = "en-us"
 
-TIME_ZONE = "UTC"
+TIME_ZONE: str = "UTC"
 
-USE_I18N = True
+USE_I18N: bool = True
 
-USE_TZ = True
+USE_TZ: bool = True
 
-DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+DEFAULT_AUTO_FIELD: str = "django.db.models.BigAutoField"
 
-PROJECT_NAME = ""
+PROJECT_NAME: str = ""

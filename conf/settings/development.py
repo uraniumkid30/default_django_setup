@@ -1,6 +1,13 @@
-from .base import *
+import os
 import secrets
 import subprocess
+
+from .base import *
+from conf.addons.directories import (
+    REQUIREMENTS_DIR,
+    DATABASE_DIR,
+    FileProcessingTool
+)
 
 db_name = "development_database.sqlite3"
 db_path = os.path.join(DATABASE_DIR, db_name)
