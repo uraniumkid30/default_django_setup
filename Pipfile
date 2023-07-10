@@ -8,6 +8,13 @@ django = "*"
 python-environ = "*"
 whitenoise = "==6.0.0"
 typing-extensions = "*"
+pytest = "*"
+black = "*"
+pytest-django = "*"
+flake8 = "*"
+pytest-cov = "*"
+pytest-mock = "*"
+pytest-factoryboy = "*"
 
 [dev-packages]
 
